@@ -1,0 +1,16 @@
+from selenium import webdriver
+
+def main():
+    driver = webdriver.Chrome()
+    driver.get("https://www.spbstu.ru/")
+    elem = driver.find_element_by_xpath('//*[@id="main-footer"]/div[1]/div/div[1]/a[5]')
+    print(elem)
+    elem.click()
+    elem1 = driver.find_element_by_xpath('//*[@id="content"]/div/div/div/div[1]/ul/li[1]/a')
+    print(elem1)
+    elem1.click()
+
+
+if __name__ == "__main__":
+    main()
+h
