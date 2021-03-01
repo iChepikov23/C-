@@ -1,0 +1,9 @@
+file = open("test.txt", "r")
+str = int(file.readline())
+file.close()
+print(str)
+str = str+1
+print(str)
+file1 = open("test.txt", "w")
+file1.write("%s"% str)
+file1.close()
